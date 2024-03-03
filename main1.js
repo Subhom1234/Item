@@ -47,9 +47,9 @@ function zoomOut() {
             // Remove the link from the body after the download starts
             document.body.removeChild(downloadLink);
         }
-function downloadAPK2() {
+function downloadAPK1() {
             // Replace 'your_app.apk' with the actual name of your APK file
-            var apkUrl = 'Home.apk';
+            var apkUrl = 'Super Search.apk';
             
             // Create a link element
             var downloadLink = document.createElement('a');
