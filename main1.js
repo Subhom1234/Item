@@ -65,4 +65,22 @@ function downloadAPK1() {
             // Remove the link from the body after the download starts
             document.body.removeChild(downloadLink);
 }
+function downloadAPK3() {
+            // Replace 'your_app.apk' with the actual name of your APK file
+            var apkUrl = 'S.Event.apk';
+            
+            // Create a link element
+            var downloadLink = document.createElement('a');
+            downloadLink.href = apkUrl;
+            downloadLink.download = 'your_app.apk';
+
+            // Append the link to the body
+            document.body.appendChild(downloadLink);
+
+            // Trigger a click on the link to start the download
+            downloadLink.click();
+
+            // Remove the link from the body after the download starts
+            document.body.removeChild(downloadLink);
+}
     
