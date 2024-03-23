@@ -49,7 +49,7 @@ function zoomOut() {
         }
 function downloadAPK1() {
             // Replace 'your_app.apk' with the actual name of your APK file
-            var apkUrl = 'S.Event.apk';
+            var apkUrl = 'Super Search.apk';
             
             // Create a link element
             var downloadLink = document.createElement('a');
