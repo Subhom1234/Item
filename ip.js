@@ -1,4 +1,23 @@
 
+
+
+
+
+
+        {
+        
+        const deviceInfo = document.getElementById('deviceInfo');
+        const userAgent = navigator.userAgent;
+        
+        // Example device verification logic
+        if (userAgent.includes("Chrome")) {
+          deviceInfo.textContent = ` ${userAgent}`;
+          deviceInfo.style.color = 'green';
+        } else {
+          deviceInfo.textContent = `Device verification failed: ${userAgent}`;
+          deviceInfo.style.color = 'red';
+        }
+        }
         // Function to fetch the user's IP address using ipinfo.io
         function getIpAddress() {
             return fetch('https://ipinfo.io/json')
@@ -30,7 +49,7 @@
         }
 
         // Function to send data to the Google Sheet
-        function sendDataToGoogleSheet(ipAddress, date, time) {
+        function sendDataToGoogleSheet(ipAddress, deviceInfo, date, time) {
             var url = 'https://script.google.com/macros/s/AKfycbyBICEwMEP4ceNdWPCyI0U_fONVzQSaEa1Wmjw6Q0z6CyoB1-auhqo8DVcaH2t6OLZr/exec';
 
             fetch(url, {
