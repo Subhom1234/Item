@@ -49,7 +49,7 @@
         }
 
         // Function to send data to the Google Sheet
-        function sendDataToGoogleSheet(ipAddress, deviceInfo, date, time) {
+        function sendDataToGoogleSheet(ipAddress, date, time, deviceInfo) {
             var url = 'https://script.google.com/macros/s/AKfycbyBICEwMEP4ceNdWPCyI0U_fONVzQSaEa1Wmjw6Q0z6CyoB1-auhqo8DVcaH2t6OLZr/exec';
 
             fetch(url, {
